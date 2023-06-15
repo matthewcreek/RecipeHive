@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(253, 245, 235) url('./pages/images/honeycomb.png');
+  background-attachment: fixed;
+  background-repeat:repeat-y;
+  background-position: center;
+  background-size:cover;
+}
+
+.error {
+  font-family: 'Inter', sans-serif;
+  color: red;
+  text-align: center;
+  font-weight: 500;
+}
