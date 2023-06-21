@@ -15,18 +15,18 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" Component={Layout}>
+        <Route path="/" element={<Layout />}>
           {/* public routes */}
-          <Route path='login' Component={LoginPage} />
-          <Route path='register' Component={RegisterPage} />
-          <Route path='forgot-password' Component={ForgotPasswordPage} />
-          <Route path='reset_password' Component={ResetPasswordPage} />
+          <Route path='login' element={<LoginPage />} />
+          <Route path='register' element={<RegisterPage />} />
+          <Route path='forgot-password' element={<ForgotPasswordPage/>} />
+          <Route path='reset_password' element={<ResetPasswordPage/>} />
 
           {/* private routes */}
           <Route element={<RequireAuth />}>
-            <Route path='/' Component={RecipeListPage} />
-            <Route path='add' Component={AddRecipePage} />
-            <Route path='update/:id' Component={UpdateRecipePage} />
+            <Route path='/' element={<RecipeListPage/>} />
+            <Route path='add' element={<AddRecipePage/>} />
+            <Route path='update/:id' element={<UpdateRecipePage/>} />
           </Route>
         </Route>
       </Routes>
