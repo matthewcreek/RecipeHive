@@ -110,7 +110,8 @@
     border-radius: 10px;
     box-shadow: 2px 2px 1px #615126;
     padding: 10px;
-    min-width: fit-content;
+    /* min-width: fit-content; */
+    min-width: 10em;
     z-index: 100;
     right:0px;
   }
